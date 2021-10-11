@@ -10,7 +10,6 @@ const formHandler = () => {
         span_info.classList.add('success')
         input.value = ''
     } else if (input.value) {
-        console.log('error')
         span_info.textContent = "Please provide a vaild email!"
         error_icon.classList.add('show')
     }

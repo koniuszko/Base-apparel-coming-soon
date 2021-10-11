@@ -5,6 +5,18 @@
     font-family: 'Josefin Sans';
 }
 
+body {
+    width: 375px;
+}
+
+.wrapper {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%, -50%);
+    width: 375px;
+}
+
 .logo {
     background-image: url(./images/logo.svg);
     width: 158px;
