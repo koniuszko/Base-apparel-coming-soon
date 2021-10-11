@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans';
+}
+
+.logo {
+    background-image: url(./images/logo.svg);
+    width: 158px;
+    height: 33px;
+    margin: 25px;
+}
+
+.banner {
+    background-image: url(./images/hero-mobile.jpg);
+    background-repeat: no-repeat;
+    width: 375px;
+    height: 250px;
+}
+
+.title {
+    margin: 50px 50px 20px 50px;
+    font-size: 50px;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    text-align: center;
+    font-weight: 400;
+}
+
+.color {
+    color: hsl(0, 36%, 70%);
+    font-weight: 300;
+}
+
+.text {
+    margin: 0 40px 40px;
+    text-align: center;
+    font-size: 18px;
+    color: hsl(0, 36%, 70%);
+    font-weight: 400;
+}
+
+.form {
+    margin: 0 20px;
+    text-align: center;
+}
+
+input {
+    position: relative;
+    padding: 5px 0 0 20px;
+    line-height: 45px;
+    font-size: 14px;
+    color: hsl(0, 93%, 68%);
+    width: 100%;
+    border: 1px solid hsl(0, 36%, 70%);
+    border-radius: 26px;
+}
+
+input.error {
+    border: 1px solid hsl(0, 77%, 49%);
+}
+
+input::placeholder {
+    font-size: 18px;
+    color: hsl(0, 23%, 43%);
+}
+
+button {
+    position: absolute;
+    right: 20px;
+    height: 52px;
+    width: 80px;
+    border: none;
+    border-radius: 26px;
+    background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    color: #fff;
+    font-weight: 600;
+    font-size: 46px;
+}
+
+button img {
+    height: 25px;
+}
+
+.error_icon {
+    display: none;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -35px;
+}
+
+.error_icon.show {
+    display: block;
+}
+
+
+span.info {
+    display: block;
+    margin: 5px 20px;
+    text-align: left;
+    color: red;
+    font-size: 12px;
+}
+
+span.info.success {
+    color: green;
+}
