@@ -19,6 +19,11 @@ const focusHandler = () => {
     span_info.textContent = ''
     span_info.classList.remove('success')
     error_icon.classList.remove('show')
+    document.addEventListener('keydown', (e) => {
+        if (e.keyCode == 13) {
+            formHandler()
+        } else return
+    })
 }
 
 submit_btn.addEventListener('click', () => formHandler())

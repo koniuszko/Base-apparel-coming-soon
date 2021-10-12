@@ -6,7 +6,6 @@
 }
 
 body {
-    /* position: relative; */
     width: 375px;
 }
 
@@ -70,11 +69,11 @@ input {
 }
 
 input.error {
-    border: 1px solid hsl(0, 77%, 49%);
+    border: 1px solid hsl(0, 93%, 68%);
 }
 
 input::placeholder {
-    font-size: 18px;
+    font-size: 14px;
     color: hsl(0, 23%, 43%);
 }
 
@@ -112,10 +111,93 @@ span.info {
     display: block;
     margin: 5px 20px;
     text-align: left;
-    color: red;
-    font-size: 12px;
+    color: hsl(0, 93%, 68%);
+    font-size: 14px;
 }
 
 span.info.success {
     color: green;
+}
+
+
+@media(min-width:1440px) {
+    body {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .wrapper {
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 1200px;
+        background-image: url(./images/bg-pattern-desktop.svg);
+        background-repeat: no-repeat;
+        background-position: left;
+        display: grid;
+        grid-template-columns: 700px 500px;
+        grid-template-rows: 150px 450px;
+        grid-template-areas: "logo banner""form banner";
+    }
+
+    .logo {
+        grid-area: logo;
+        margin: 50px 100px 0 100px;
+    }
+
+    .banner {
+        grid-area: banner;
+        background-image: url(./images/hero-desktop.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        width: 500px;
+        height: auto;
+    }
+
+    main {
+        grid-area: form;
+        margin: 25px 100px 75px 100px;
+    }
+
+    .title {
+        margin: 0;
+        font-size: 60px;
+        letter-spacing: 12px;
+        text-align: left;
+    }
+
+
+
+    .text {
+        margin: 25px 0;
+        text-align: left;
+        line-height: 30px;
+    }
+
+    .form {
+        margin: 0;
+        position: relative;
+    }
+
+    input {
+        position: initial;
+    }
+
+
+    button {
+        position: absolute;
+        right: 0;
+        width: 100px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background: hsl(0, 80%, 86%);
+    }
+
+    span.info {
+        margin: 10px 20px;
+    }
+
+
 }
