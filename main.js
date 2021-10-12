@@ -9,7 +9,7 @@ const formHandler = () => {
         span_info.textContent = "Success!"
         span_info.classList.add('success')
         input.value = ''
-    } else if (input.value) {
+    } else {
         span_info.textContent = "Please provide a vaild email!"
         error_icon.classList.add('show')
     }
