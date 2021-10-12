@@ -22,6 +22,7 @@ const focusHandler = () => {
     document.addEventListener('keydown', (e) => {
         if (e.keyCode == 13) {
             formHandler()
+            input.blur()
         } else return
     })
 }
